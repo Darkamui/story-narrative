@@ -1,0 +1,17 @@
+.git
+.github
+.env*
+node_modules
+dist
+artifacts
+test-results
+playwright-report
+.vite
+*.tsbuildinfo
+# Blender/delivery sources and dev tooling — not needed to build the site
+assets
+tools
+tests
+docs
+*.md
+Dockerfile
