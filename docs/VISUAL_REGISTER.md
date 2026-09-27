@@ -1,0 +1,26 @@
+# Visual evidence and abstractions
+
+| Visual | Authority | Representation and limit |
+|---|---|---|
+| Assembled cell | `spec.py`, root design history; measured `runtime-asset.json` | Original delivered mesh geometry. Above-rim equipment remains plausible-class, not a surveyed plant replica. |
+| Exploded atlas | Delivered rig plus `src/data/rig.ts` | Mechanical axes retained. Reading gaps are presentation distances, not physical dimensions or a maintenance sequence. |
+| Inner layers | Named meshes and measured original bounds | Cover, crust, electrolyte, metal, cathode, side lining, bedding, two firebrick courses, insulation, shell. The side-lining label groups backing, SiC and ledge; individual mesh selection remains available. |
+| Longitudinal section | `tools/build-section.py`, `section-asset.json` | Runtime Z=0, retaining Z≤0. The centre aisle is cut; the far anode row remains. Overhead equipment and crust/cover disappear for visibility. This is a sectional illustration, not an operating configuration. |
+| Section surfaces | Blender exact booleans on source geometry | Only the 35 face sets needed by retained assemblies are exported. Every exported vertex must remain within its original mesh bounds. Open gas duct excluded from solid booleans. |
+| Bath vs metal | Original material families; `claims.ts` metal-layer | Amber identifies the electrolyte; silver identifies aluminium. Color and emissivity do not encode temperature. No film or molecular species is inferred from the material shader. |
+| Electrical current | Hydro current description; OpenStax electrochemistry; `currentSteps` | Connection strip with supply/anode/bath/metal/collector highlights. No path interpolated across unsupported busbar gaps. Electronic and ionic conduction are distinguished. |
+| Feed and dissolution | CHALCO / ICSOBA AL08, p. 631; Australian Aluminium Council | Breaker precedes dose. Real feeder/bath anchors, illustrative stroke and marker quantities. Separate dissolved-material representation, not a grain-to-metal morph. |
+| Reaction interface | JOM 2019 Process Overview / Eq. 1 | Enlarged gap and idealised balanced net equation. Metal forms at the cathodic metal interface. No claim of discrete free Al³⁺ / O²⁻ populations or oxygen-gas evolution from a conventional carbon anode. |
+| Carbon loss | IAI process description; Australian Aluminium Council | Hatched material comparison. No time scale, dimensional consumption prediction or operating position implied. |
+| Bubbles and collection | ICSOBA AL16 §6; JOM Gas Treatment Centre | Bubble markers clear the anode edge before rising. Collection diagram is topological; no flow through the model’s closed roof is asserted. CO₂ is distinguished from pollutants removed by ordinary dry scrubbing. |
+| Heat | JOM Process Overview; model lining | Directional heat-loss diagram, without a temperature map or measured flux. |
+| Anode-effect interface | Stanic et al. 2022, observations / Figs. 16–18; IAI Appendix C | M5 uses identical enlarged interface geometry in a fixed normal reference and a scroll-sampled study. Separate gas patches broaden into a hatched film, with fewer visible dissolved-alumina marks. These are qualitative encodings, not measured film thickness, coverage, concentration or bubble frequency. The provisional 3D amber marker has been removed. |
+| Voltage / current / PFC | IAI Appendix C; ICSOBA 2016 AL16 | An independent qualitative voltage marker rises; no volts, time axis or current increase is invented. PFC formation is distinguished from ordinary CO₂ evolution. A normal voltage display does not imply zero PFC emissions. |
+| Return from anode effect | IAI intervention requirement; editorial sampler | Explicit return after intervention before the metal chapter. No operational correction sequence, spontaneous recovery or recovery duration is depicted. |
+| Vacuum tapping | Fives ECL / ICSOBA AL13, Introduction and §3.3 | Blender-authored sectional metal pad, tapping tube, lined crucible and vacuum connection. Proportions and fill timing are illustrative. Tube tip lies in metal. The open front is a section, not an unsealed operating vessel. |
+| Cast-house transfer | Hydro printed p. 04 | Explicit location change through a transport crucible. No invented plant route, crane operation or permanent connecting pipe. |
+| Melt preparation | Pyrotek metal treatment; ALTEK ingot casting | Product-dependent composition/treatment explained in text; sectioned holding furnace supplies the selected ingot route. No unsupported alloy or treatment equipment. |
+| Mould filling and cooling | ALTEK supply description; Hertwich open-mould air-cooled ingot casting | Single enlarged mould, launder, air supply and support. No full conveyor, pouring-control mechanism or temperature scale. Identical liquid/solid footprint preserves continuity. |
+| Final ingot | Editorial isolation after complete cooling stage | Equipment fades and solid ingot rises into a final shot. Explicitly not a demoulding-machine animation or one-grain mass balance. |
+
+Geometry-derived labels describe this project model. They must not be promoted to universal industrial specifications. Exploded distances and camera coordinates are editorial data only.

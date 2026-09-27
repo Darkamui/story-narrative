@@ -1,0 +1,219 @@
+{
+  "source_sha256": "32bdbe7086ee950b9b02ef322abda5887f8d8f68815a5205c245f0d9e33c65e8",
+  "plane": "Blender Y=0 / glTF Z=0",
+  "kept_half": "glTF Z<=0",
+  "blender": "5.2.1 LTS",
+  "bytes": 39012,
+  "caps": [
+    {
+      "node": "03_CATHODE_block_000",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850027084350586
+    },
+    {
+      "node": "03_CATHODE_block_001",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3284999132156372
+    },
+    {
+      "node": "03_CATHODE_block_002",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850003242492676
+    },
+    {
+      "node": "03_CATHODE_block_003",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3284996747970581
+    },
+    {
+      "node": "03_CATHODE_block_004",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3285001516342163
+    },
+    {
+      "node": "03_CATHODE_block_005",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850003242492676
+    },
+    {
+      "node": "03_CATHODE_block_006",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.328499972820282
+    },
+    {
+      "node": "03_CATHODE_block_007",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.328499972820282
+    },
+    {
+      "node": "03_CATHODE_block_008",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850003242492676
+    },
+    {
+      "node": "03_CATHODE_block_009",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850003242492676
+    },
+    {
+      "node": "03_CATHODE_block_010",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850000262260437
+    },
+    {
+      "node": "03_CATHODE_block_011",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850003242492676
+    },
+    {
+      "node": "03_CATHODE_block_012",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3284999430179596
+    },
+    {
+      "node": "03_CATHODE_block_013",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850009202957153
+    },
+    {
+      "node": "03_CATHODE_block_014",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850009202957153
+    },
+    {
+      "node": "03_CATHODE_block_015",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.328499972820282
+    },
+    {
+      "node": "03_CATHODE_block_016",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3284999132156372
+    },
+    {
+      "node": "03_CATHODE_block_017",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3285001516342163
+    },
+    {
+      "node": "03_CATHODE_block_018",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.3284996747970581
+    },
+    {
+      "node": "03_CATHODE_block_019",
+      "polygons": 1,
+      "vertices": 13,
+      "area_m2": 0.32850027084350586
+    },
+    {
+      "node": "03_CATHODE_ramming_000",
+      "polygons": 21,
+      "vertices": 168,
+      "area_m2": 0.5625002458691597
+    },
+    {
+      "node": "04_PROCESS_bath_000",
+      "polygons": 1,
+      "vertices": 85,
+      "area_m2": 3.0840001106262207
+    },
+    {
+      "node": "04_PROCESS_metal_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 3.0500006675720215
+    },
+    {
+      "node": "02_REFRACTORY_bedding_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 0.8175002336502075
+    },
+    {
+      "node": "02_REFRACTORY_end_backing_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 0.1829996109008789
+    },
+    {
+      "node": "02_REFRACTORY_end_backing_001",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 0.1829996109008789
+    },
+    {
+      "node": "02_REFRACTORY_end_sic_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 0.12199974060058594
+    },
+    {
+      "node": "02_REFRACTORY_end_sic_001",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 0.12199974060058594
+    },
+    {
+      "node": "02_REFRACTORY_firebrick_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 1.062749981880188
+    },
+    {
+      "node": "02_REFRACTORY_firebrick_001",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 1.062749981880188
+    },
+    {
+      "node": "02_REFRACTORY_insulation_000",
+      "polygons": 1,
+      "vertices": 8,
+      "area_m2": 1.6350001096725464
+    },
+    {
+      "node": "02_REFRACTORY_ledge_000",
+      "polygons": 2,
+      "vertices": 28,
+      "area_m2": 0.22760003805160522
+    },
+    {
+      "node": "01_SHELL_plate_000",
+      "polygons": 1,
+      "vertices": 24,
+      "area_m2": 0.24563410878181458
+    },
+    {
+      "node": "01_SHELL_wall_end_000",
+      "polygons": 1,
+      "vertices": 24,
+      "area_m2": 0.022433694452047348
+    },
+    {
+      "node": "01_SHELL_wall_end_001",
+      "polygons": 1,
+      "vertices": 24,
+      "area_m2": 0.02243421971797943
+    }
+  ]
+}

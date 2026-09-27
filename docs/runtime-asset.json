@@ -1,0 +1,291 @@
+{
+  "meshes": 723,
+  "triangles": 140556,
+  "bounds": {
+    "min": [
+      -8.590000394672174,
+      -0.014999999664723873,
+      -3.2649999856948853
+    ],
+    "max": [
+      8.590000394672174,
+      5.049999892711639,
+      3.2649999633431435
+    ],
+    "size": [
+      17.180000789344348,
+      5.064999892376363,
+      6.529999949038029
+    ]
+  },
+  "families": {
+    "05_ANODES_block": 36,
+    "05_ANODES_clamp": 36,
+    "05_ANODES_stem": 36,
+    "05_ANODES_stub": 108,
+    "05_ANODES_yoke": 36,
+    "06_BUSBARS_arm": 4,
+    "06_BUSBARS_collector": 2,
+    "06_BUSBARS_flex": 40,
+    "06_BUSBARS_riser": 4,
+    "03_CATHODE_bar": 40,
+    "03_CATHODE_block": 20,
+    "03_CATHODE_ramming": 1,
+    "09_HARDWARE_flex_clamp": 40,
+    "09_HARDWARE_base_plate": 12,
+    "09_HARDWARE_gusset": 24,
+    "09_HARDWARE_jack": 12,
+    "09_HARDWARE_jack_cap": 12,
+    "08_HOODING_cover": 14,
+    "08_HOODING_end_box": 2,
+    "08_HOODING_end_cap": 2,
+    "08_HOODING_end_rib": 2,
+    "08_HOODING_number_plate": 2,
+    "08_HOODING_door": 4,
+    "08_HOODING_door_frame": 4,
+    "08_HOODING_handle": 60,
+    "08_HOODING_panel": 28,
+    "08_HOODING_rib": 28,
+    "08_HOODING_side_rib": 4,
+    "04_PROCESS_bath": 1,
+    "04_PROCESS_cover": 1,
+    "04_PROCESS_crust": 1,
+    "04_PROCESS_metal": 1,
+    "02_REFRACTORY_bedding": 1,
+    "02_REFRACTORY_end_backing": 2,
+    "02_REFRACTORY_end_sic": 2,
+    "02_REFRACTORY_firebrick": 2,
+    "02_REFRACTORY_insulation": 1,
+    "02_REFRACTORY_ledge": 1,
+    "02_REFRACTORY_side_backing": 2,
+    "02_REFRACTORY_side_sic": 2,
+    "01_SHELL_cradle": 28,
+    "01_SHELL_end_cradle": 8,
+    "01_SHELL_flange": 2,
+    "01_SHELL_plate": 1,
+    "01_SHELL_wall_end": 2,
+    "01_SHELL_wall_side": 2,
+    "07_SUPERSTRUCTURE_beam": 2,
+    "07_SUPERSTRUCTURE_breaker": 5,
+    "07_SUPERSTRUCTURE_chisel": 5,
+    "07_SUPERSTRUCTURE_chute": 5,
+    "07_SUPERSTRUCTURE_column": 12,
+    "07_SUPERSTRUCTURE_cross": 12,
+    "07_SUPERSTRUCTURE_deck_rail": 2,
+    "07_SUPERSTRUCTURE_duct": 1,
+    "07_SUPERSTRUCTURE_hopper": 5,
+    "07_SUPERSTRUCTURE_throat": 1
+  },
+  "rigs": [
+    {
+      "name": "10_EXPLOSION_anodes_004.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        4.400000095367432,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_busbars_bars_hi_005.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        -3
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_busbars_bars_lo_006.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hardware_flexes_hi_013.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        -3
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hardware_flexes_lo_014.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hardware_frame_015.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        1.899999976158142,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hooding_covers_008.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        5.800000190734863,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hooding_ends_hi_009.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hooding_ends_lo_010.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        -3,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hooding_panels_hi_011.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        -6.099999904632568
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_hooding_panels_lo_012.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        0,
+        6.099999904632568
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_process_003.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        1.2000000476837158,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_refractory_001.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        -2.4000000953674316,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_shell_000.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        -4.699999809265137,
+        0
+      ]
+    },
+    {
+      "name": "10_EXPLOSION_superstructure_007.position",
+      "keyCount": 61,
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        0,
+        7.400000095367432,
+        0
+      ]
+    }
+  ]
+}

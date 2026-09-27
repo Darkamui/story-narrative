@@ -1,0 +1,184 @@
+/* Scene-specific editorial composition. The full viewport belongs to the story. */
+.process-tabs [aria-current=step] span{color:#b2bfaa}
+.reading .chapter-copy{transition:none}
+.reading article li a,.field-note li a{display:inline-block;min-height:24px;padding:3px 0}
+.visual-fallback{position:absolute;left:48%;right:6%;top:28%;height:auto;padding:0}
+.visual-fallback .section-diagram{max-height:25svh}
+.scene-stage:has(.visual-fallback) .scene-caption{display:none}
+[data-layout=opening] .visual-fallback,[data-layout=departure] .visual-fallback,[data-layout=ending] .visual-fallback{top:0;left:25%;right:25%}
+[data-chapter="6"] .visual-fallback{left:auto;right:4.5%;top:45px;width:202px;font-size:11px}
+[data-chapter="6"] .visual-fallback .section-diagram{display:none}
+@media(max-width:760px){
+ .visual-fallback,[data-layout=opening] .visual-fallback,[data-layout=departure] .visual-fallback,[data-layout=ending] .visual-fallback{left:8%;right:8%;top:0;padding:0}
+ .visual-fallback .section-diagram{max-height:22svh}
+ [data-chapter="6"] .visual-fallback{left:8%;right:8%;top:30svh;width:auto}
+}
+.scene-stage{left:0;right:0;top:100px;bottom:86px;width:100%;height:auto}
+.scene-caption{bottom:14px;text-align:left;left:5%;width:auto;font-size:9px}
+.scene-grid{inset:0;opacity:.18;background-size:45px 45px}
+.chapter-copy{left:5%;top:132px;width:67%;max-width:none;padding:0;z-index:4;pointer-events:none}
+.chapter-copy>*{pointer-events:auto}
+.chapter-copy h1{font-size:clamp(32px,3.5vw,56px);max-width:820px;line-height:1.05;margin:15px 0}
+.chapter-copy .eyebrow{margin:0}
+.chapter-copy .body-copy{max-width:440px;font-size:13px;line-height:1.7;margin:10px 0}
+.chapter-copy .field-note{margin-top:13px;max-width:440px;font-size:10px}
+.field-note[open]{background:#111716f5;padding:12px;border:1px solid #61695150;max-height:270px;overflow:auto;position:relative;z-index:12}
+.chapter-copy:has(>.field-note[open]){z-index:15}
+.field-note summary{min-height:24px}
+.scroll-cue{position:fixed;left:5%;bottom:116px;margin:0;font-size:9px}
+.component-legend{position:fixed;z-index:6;right:4.5%;top:145px;bottom:128px;width:202px;max-height:690px;overflow-y:auto;scrollbar-width:thin;background:linear-gradient(90deg,#11171600,#111716bb 20%)}
+.legend-heading{font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:#c1c7b9;margin:0 0 13px;padding-bottom:13px;border-bottom:1px solid #9aa58c44}.legend-heading span{display:block;font-size:8px;color:#84917f;margin-top:6px;letter-spacing:.06em}
+.component-legend ol{list-style:none;margin:0;padding:0}.component-legend button{display:flex;align-items:center;width:100%;gap:10px;min-height:34px;padding:4px 0;text-align:left;font-size:10px;line-height:1.3;border-bottom:1px solid #b7c2a91a}.component-legend button>span:nth-child(2){flex:1}.component-number{font-size:10px;font-variant-numeric:tabular-nums;width:18px}.component-legend small{display:block;font-size:8px;color:#7b897d;margin-top:2px}.component-legend [data-exposure=visible] small{color:#bdc9b7}.component-legend [aria-pressed=true]{color:#e8c793;border-color:#d7b47d80;background:#b6b98712}.legend-hint{font-size:9px;color:#86927f;line-height:1.5;margin:13px 0}
+.leader-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:visible}.part-inspector{position:fixed;z-index:25;left:5%;bottom:132px;width:330px;background:#17201efa;border:1px solid #73806c6b;padding:23px;box-shadow:0 15px 60px #0007}.part-inspector h2{font-size:20px;letter-spacing:-.03em;font-weight:400;margin:14px 0}.part-inspector>p{font-size:12px;line-height:1.65;color:#b7c2b4}.part-inspector label{font-size:10px;display:block;margin-top:18px;color:#b2bda9}.part-inspector select{width:100%;padding:10px 4px;margin-top:5px;border:1px solid #64715c;background:#17201e;font-size:11px}.inspector-close{position:absolute;right:10px;top:5px;font-size:23px}.part-inspector .evidence-note{font-size:9px;color:#a89b7e;border-top:1px solid #69745350;padding-top:12px}.selected-part-name span{display:block;font-size:10px;color:#919d88}.asset-notice{position:absolute;top:45%;left:25%;right:25%;z-index:8;background:#18221ef5;border:1px solid #a597735e;padding:20px;text-align:center;font-size:12px}.asset-notice button{text-decoration:underline;color:#dec49f}
+[data-layout=opening] .chapter-copy{top:auto;bottom:17%;left:16%;width:68%;text-align:center}
+[data-layout=opening] .chapter-copy h1{font-size:clamp(40px,4.7vw,76px);max-width:1000px;margin:20px auto}
+[data-layout=opening] .eyebrow{justify-content:center}
+[data-layout=opening] .body-copy{max-width:520px;margin:0 auto}
+[data-layout=opening] .field-note{margin:16px auto 0;width:max-content;max-width:500px;text-align:left}
+[data-layout=opening] .scene-caption{left:50%;transform:translateX(-50%);text-align:center;bottom:57%}
+[data-layout=opening] .scroll-cue{left:50%;transform:translateX(-50%)}
+[data-layout=reveal] .chapter-copy h1{max-width:650px}
+[data-layout=reveal] .body-copy{position:fixed;bottom:157px;left:5%;max-width:300px}
+[data-layout=reveal] .field-note{position:fixed;bottom:138px;left:5%}
+[data-layout=overhead] .chapter-copy{width:42%;left:7%}
+[data-layout=overhead] .chapter-copy h1{font-size:43px;max-width:510px}
+[data-layout=anatomy] .chapter-copy{left:5%;width:68%}
+[data-layout=anatomy] .chapter-copy h1{font-size:39px;max-width:750px}
+[data-layout=anatomy] .body-copy{max-width:540px;font-size:12px}
+[data-layout=anatomy] .field-note{position:fixed;left:5%;bottom:143px}
+[data-layout=section] .chapter-copy,[data-layout=current] .chapter-copy{width:58%}
+[data-layout=section] .chapter-copy h1,[data-layout=current] .chapter-copy h1{font-size:43px;max-width:690px}
+[data-layout=detail] .chapter-copy,[data-layout=comparison] .chapter-copy{width:37%;left:5%;top:137px}
+[data-layout=detail] .chapter-copy h1,[data-layout=comparison] .chapter-copy h1{font-size:40px;max-width:460px}
+[data-layout=overview] .chapter-copy{left:6%;width:62%}
+[data-layout=metal] .chapter-copy{width:64%}
+[data-layout=metal] .body-copy{max-width:340px}
+[data-layout=ending] .chapter-copy,[data-layout=departure] .chapter-copy{top:auto;bottom:18%;left:14%;width:72%;text-align:center}
+[data-layout=ending] .chapter-copy h1,[data-layout=departure] .chapter-copy h1{margin:18px auto;font-size:56px}
+[data-layout=ending] .eyebrow,[data-layout=departure] .eyebrow{justify-content:center}
+[data-layout=ending] .body-copy,[data-layout=departure] .body-copy{margin:0 auto;max-width:560px}
+[data-layout=ending] .field-note,[data-layout=departure] .field-note{margin:16px auto;width:max-content;text-align:left}
+[data-layout=ending] .end-link{margin:16px auto 0}
+.reading .chapter-copy{position:static!important;width:100%!important;text-align:left!important}.reading .chapter-copy h1{font-size:40px!important;margin:20px 0!important}.reading .chapter-copy .eyebrow{justify-content:flex-start}.reading .body-copy,.reading .field-note{position:static!important;margin:16px 0!important;max-width:620px!important;width:auto!important}.reading .scene-stage,.reading .component-legend,.reading .part-inspector{display:none}
+.asset-notice{position:fixed;top:110px;left:calc(50% - 220px);right:auto;width:440px;z-index:40}
+.component-legend button{font-size:11px;min-height:36px}
+@media(min-width:1600px){.component-legend{width:230px;top:160px}.component-legend button{min-height:40px;font-size:11px}.component-legend small{font-size:9px}.chapter-copy{top:160px}}
+@media(max-width:1100px) and (min-width:761px){.component-legend{right:3%;width:170px;top:120px}.component-legend button{min-height:29px;font-size:9px}.component-legend small{font-size:7px}.chapter-copy{top:120px}.chapter-copy h1{font-size:34px!important}.chapter-copy .body-copy{font-size:11px;max-width:360px}.component-legend .legend-hint{display:none}.legend-heading{margin-bottom:5px;padding-bottom:7px}.chapter-copy .field-note{font-size:9px}}
+@media(max-width:760px){
+ .scene-stage{top:72px;height:34svh;bottom:auto;width:100%}.scene-caption{left:5%;bottom:0;font-size:8px;max-width:90%}
+ .leader-overlay{display:none}
+ .component-legend{left:5%;right:5%;top:43svh;bottom:auto;width:90%;height:158px;max-height:none;background:#111716;border-top:1px solid #7e8c6d3d;border-bottom:1px solid #7e8c6d3d;overflow:auto}
+ .legend-heading,.legend-hint{display:none}.component-legend ol{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.component-legend button{min-height:22px;font-size:8.5px;line-height:1.1;padding:3px 0}.component-legend small{display:none}.component-number{font-size:9px;width:14px}
+ [data-layout] .chapter-copy{left:7%;top:calc(43svh + 175px);bottom:auto;width:86%;max-width:none;text-align:left;padding-bottom:0;max-height:calc(57svh - 255px);overflow:auto}
+ [data-layout] .chapter-copy h1{font-size:clamp(24px,6vw,31px);max-width:100%;margin:12px 0}
+ [data-layout] .chapter-copy .eyebrow{justify-content:flex-start;font-size:8px}
+ [data-layout] .chapter-copy .body-copy{position:static;font-size:11px;line-height:1.6;margin:0;max-width:100%}
+ [data-layout] .chapter-copy .field-note{position:static;margin:12px 0 0;width:auto;max-width:100%;font-size:9px}
+ .field-note[open]{max-height:17svh;overflow:auto}.scroll-cue{display:none}
+ .part-inspector{left:5%;right:5%;bottom:85px;width:90%;padding:18px;max-height:44svh;overflow:auto}
+ [data-layout=opening] .scene-stage{height:44svh}
+ [data-layout=opening] .chapter-copy{top:56svh;text-align:center;left:7%;width:86%;max-height:calc(44svh - 85px)}
+ [data-layout=opening] .chapter-copy h1{font-size:34px}
+ [data-layout=opening] .chapter-copy .eyebrow{justify-content:center}
+ [data-layout=opening] .scene-caption{bottom:10px;left:50%;width:90%;max-width:none}
+ [data-layout=ending] .chapter-copy,[data-layout=departure] .chapter-copy{top:50svh;text-align:center;max-height:calc(50svh - 85px)}
+ [data-layout=ending] .chapter-copy .eyebrow,[data-layout=departure] .chapter-copy .eyebrow{justify-content:center}
+ .asset-notice{left:5%;right:5%;top:85px;width:auto}
+}
+/* Anatomy uses both margins, with a separate, labelled study of the inner stack. */
+.anatomy-guide{position:fixed;left:5%;right:5%;top:234px;z-index:7;pointer-events:none}
+.anatomy-views{position:absolute;right:0;top:0;display:flex;gap:5px;pointer-events:auto}
+.anatomy-views button{padding:10px 16px;border:1px solid #74856a55;font-size:11px;background:#101917}
+.anatomy-views button[aria-pressed=true]{border-color:#c4b58e;color:#e2caa2;background:#263028}
+.anatomy-phase{font-size:11px;letter-spacing:.05em;color:#e2caa2;margin:0 0 8px}
+.anatomy-description{font-size:11px;line-height:1.5;color:#b5c0b0;margin:0;max-width:430px}
+.anatomy-guide>span{display:block;font-size:8px;color:#849181;margin-top:8px}
+@media(min-width:761px){
+ [data-layout=anatomy] .component-legend{left:5%;right:5%;width:auto;top:365px;bottom:128px;max-height:none;overflow:visible;background:none;pointer-events:none}
+ [data-layout=anatomy] .component-legend ol{display:grid;grid-template-columns:185px 1fr 202px;row-gap:17px}
+ [data-layout=anatomy] .component-legend button{pointer-events:auto;background:linear-gradient(90deg,#111716e8,#11171699);min-height:36px}
+ [data-layout=anatomy] .component-legend .legend-heading,[data-layout=anatomy] .component-legend .legend-hint{display:none}
+ [data-layout=anatomy]:not(.reading) .body-copy{visibility:hidden}
+}
+@media(max-width:760px){
+ .component-legend li{grid-column:auto!important;grid-row:auto!important}
+ .anatomy-guide{top:calc(43svh - 44px);left:5%;right:5%}
+ .anatomy-views{position:static;justify-content:center}
+ .anatomy-views button{font-size:9px;padding:5px 14px}
+ .anatomy-phase,.anatomy-description,.anatomy-guide>span{display:none}
+ [data-layout=anatomy] .scene-caption{display:none}
+}
+/* Operating mechanisms: full-stage diagrams, model close-ups and a circuit strip. */
+.process-experience{position:fixed;inset:0;pointer-events:none;z-index:5}
+.process-tabs{position:absolute;left:5%;right:23%;top:285px;display:flex;gap:5px;pointer-events:auto}
+.process-tabs button{font-size:10px;padding:8px 12px;border-bottom:1px solid #52604f;color:#a9b4a4;min-height:36px;white-space:nowrap}
+.process-tabs button span{margin-right:8px;color:#7e8a77;font-size:9px}
+.process-tabs [aria-current=step]{border-color:#d8ba86;color:#f0ddbd;background:#252f26}
+[data-chapter="6"] .chapter-copy{left:5%;top:130px;width:73%;max-height:150px}
+[data-chapter="6"] .chapter-copy h1{font-size:40px;max-width:950px;margin:12px 0}
+[data-chapter="6"] .chapter-copy .body-copy{max-width:770px;font-size:12px;line-height:1.5}
+[data-chapter="6"] .field-note{position:fixed;left:5%;bottom:128px;max-width:700px}
+[data-chapter="6"] .scroll-cue{bottom:105px}
+.mechanism-figure{position:absolute;left:5%;bottom:167px;width:40%;margin:0;background:#111716ee;border-top:1px solid #6d7c6650;padding-top:8px}
+.mechanism-figure svg{width:100%;height:auto;max-height:315px;display:block;color:#d7c099;overflow:visible}
+.mechanism-figure text{font-family:'DM Sans',sans-serif;font-size:18px;fill:#d8dfd4}
+.mechanism-figure .svg-kicker{font-size:13px;letter-spacing:1.2px;fill:#b8a482}
+.mechanism-figure .svg-note{font-size:13px;fill:#a8b6a3}
+.mechanism-figure .svg-metal-label{fill:#17231e}
+.svg-bath{fill:#b3864345;stroke:#c3a26d;stroke-width:1.5}.svg-carbon{fill:#35413c;stroke:#8b9a89;stroke-width:1.5}.svg-metal{fill:#c7d3cf;stroke:#e1eae1}.svg-outline,.svg-hopper{fill:#c2d0c025;stroke:#b6c6ba;stroke-width:2}
+.svg-arrow{fill:none;stroke:#d7c099;stroke-width:2;marker-end:url(#process-arrow)}.svg-leader{fill:none;stroke:#a4b19d;stroke-width:1}
+.mechanism-figure figcaption{font-size:9px;color:#9ca991;line-height:1.7;padding:5px 12px}
+.mechanism-figure figcaption strong{font-size:22px;color:#e4d7bf;display:block;letter-spacing:.03em;margin-bottom:8px}
+.mechanism-react,.mechanism-carbon{left:6%;top:338px;bottom:auto;width:70%;background:none;border:none}
+.mechanism-react svg,.mechanism-carbon svg{max-height:390px}
+.mechanism-react figcaption{text-align:center}
+.mechanism-dissolve{left:10%;width:62%;bottom:167px}
+.mechanism-dissolve svg{max-height:260px}
+.mechanism-gas{width:71%;bottom:160px}
+.mechanism-gas svg{max-height:250px}
+.mechanism-heat{width:41%;bottom:155px}
+.mechanism-heat svg{max-height:230px}
+.electrical-diagram,.operation-summary,.metal-caption{position:absolute;left:5%;bottom:155px;width:72%;background:#111716e8;border-top:1px solid #62735b66;padding:14px 0}
+.diagram-eyebrow{font-size:11px;color:#dbc095;letter-spacing:.05em;margin:0 0 18px}.diagram-eyebrow span{float:right;color:#889b88;font-size:9px}
+.electrical-diagram ol{display:grid;grid-template-columns:repeat(5,1fr);list-style:none;padding:0;margin:0;gap:16px}
+.electrical-diagram li{position:relative;border-bottom:1px solid #72826855;padding:10px 8px;color:#9ca991}
+.electrical-diagram li:not(:last-child):after{content:'\2192';position:absolute;right:-15px;top:18px;color:#c7af87}
+.electrical-diagram li>span{font-size:9px;display:block;margin-bottom:7px}.electrical-diagram strong{font-size:12px;font-weight:500;display:block}.electrical-diagram small{font-size:9px;display:block;margin-top:7px}
+.electrical-diagram li[data-current=true]{background:#30382a;color:#f1d7a6;border-color:#e2c58d}
+.electrical-diagram>p:last-child,.operation-summary>p:last-child{font-size:10px;line-height:1.6;color:#a1b09a;max-width:750px;margin:14px 0 0}
+.operation-summary div{display:flex;justify-content:space-between;gap:15px}.operation-summary div span{font-size:14px;border-left:2px solid #b6a17c;padding-left:15px}
+.metal-caption{width:47%;bottom:170px}.metal-caption strong{font-size:15px;color:#e4e8dc;font-weight:400}.metal-caption p{font-size:12px;line-height:1.6;max-width:560px;color:#b5c0ae}.metal-caption>span{font-size:9px;color:#8c9f88}
+.process-reading h2{font-size:25px;font-weight:400;margin:35px 0 12px}.process-reading p{font-size:14px;line-height:1.8;max-width:650px;color:#b6c1ae}
+.reading[data-chapter="6"] .chapter-copy{max-height:none}.reading[data-chapter="6"] .field-note{position:static}
+.dev-controls{max-height:70vh;overflow:auto}
+@media(min-width:761px) and (max-height:900px){
+ .mechanism-react svg,.mechanism-carbon svg{max-height:clamp(180px,calc(100svh - 540px),390px)}
+ .mechanism-react figcaption strong{font-size:18px;margin-bottom:4px}
+}
+@media(min-width:761px) and (max-height:850px){
+ [data-layout=anatomy] .component-legend{top:305px}
+ [data-layout=anatomy] .component-legend ol{row-gap:5px}
+}
+@media(max-width:1100px) and (min-width:761px){
+ [data-chapter="6"] .chapter-copy h1{font-size:32px!important}.process-tabs{top:290px}.process-tabs button{padding:6px;font-size:9px}.mechanism-react,.mechanism-carbon{top:340px}.electrical-diagram strong{font-size:10px}
+}
+@media(max-width:760px){
+ .process-tabs{top:78px;left:5%;right:5%;overflow:auto;scrollbar-width:thin;gap:2px}
+ .process-tabs button{min-height:32px;font-size:9px;padding:5px 9px}.process-tabs button span{display:none}
+ [data-chapter="6"] .chapter-copy{left:7%;top:calc(43svh + 175px);width:86%;max-height:calc(57svh - 255px)}
+ [data-chapter="6"] .chapter-copy h1{font-size:27px!important}.chapter-copy .body-copy,[data-chapter="6"] .chapter-copy .body-copy{font-size:11px;line-height:1.6}
+ [data-chapter="6"] .chapter-copy .field-note{position:static;margin-top:12px}
+ [data-chapter="6"] .scene-stage canvas{opacity:.13}
+ [data-chapter="6"] .scene-caption{display:none}
+ .mechanism-figure,.mechanism-react,.mechanism-carbon,.mechanism-dissolve,.mechanism-gas,.mechanism-heat{left:3%;width:94%;top:calc(72px + 6svh);bottom:auto;background:#111716e8;border:none;padding:0}
+ .mechanism-figure svg{max-height:25svh}.mechanism-figure text{font-size:23px}.mechanism-figure .svg-note{font-size:18px}.mechanism-figure .svg-kicker{font-size:16px}
+ .mechanism-figure figcaption{font-size:7px;line-height:1.5;padding:4px 10px}.mechanism-figure figcaption strong{font-size:15px;margin:2px 0}
+ .electrical-diagram{left:5%;width:90%;top:93px;bottom:auto;padding:6px;background:#111716f0}
+ .diagram-eyebrow{font-size:9px;margin:0 0 6px}.diagram-eyebrow span{display:none}
+ .electrical-diagram ol{display:block}.electrical-diagram li{padding:5px 7px;display:grid;grid-template-columns:18px 1fr 110px;gap:5px;align-items:center}.electrical-diagram li>span{font-size:8px;margin:0}.electrical-diagram strong{font-size:9px}.electrical-diagram small{font-size:7px;margin:0}.electrical-diagram li:not(:last-child):after{content:''}
+ .electrical-diagram>p:last-child{font-size:8px;line-height:1.4;margin-top:8px}
+ .operation-summary{left:5%;width:90%;top:calc(43svh - 74px);bottom:auto;padding:8px 0}.operation-summary div{gap:4px}.operation-summary div span{font-size:8px;padding-left:5px}.operation-summary>p:last-child{display:none}
+ .metal-caption{left:5%;width:90%;top:calc(43svh - 105px);bottom:auto;padding:8px 0}.metal-caption strong{font-size:10px}.metal-caption p{font-size:9px;margin:5px 0}.metal-caption>span{display:none}
+ .reading[data-chapter="6"] .chapter-copy{max-height:none}
+}
+@media(max-width:760px){.mechanism-figure .svg-interface-note{font-size:15px}}

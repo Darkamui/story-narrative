@@ -1,0 +1,28 @@
+export const siteCopy = {
+  en: {
+    skip: 'Skip to content', library: 'The stories', about: 'The idea', eyebrow: 'An open invitation to look closer',
+    title: 'There’s a story', titleEnd: 'inside everything.',
+    intro: 'Explore the objects, materials, and processes that shape our world. Take them apart. Follow the connections. See how they work.',
+    browse: 'Explore the stories', collection: 'The collection', collectionTitle: 'Start with curiosity.',
+    collectionNote: 'One story to begin. More perspectives to come.', enter: 'Enter the story',
+    aboutEyebrow: 'A different way to understand', aboutTitle: 'From the whole to the smallest detail.',
+    aboutText: 'Each story brings a subject into focus through interactive scenes and a guided narrative. Move at your own pace, pause to explore, or settle into the reading view.',
+    footer: 'A closer look at how things work.', loading: 'Opening the story…',
+    failedTitle: 'The story could not open.', failedText: 'Please reload to try again, or return to the collection.',
+    retry: 'Try again', home: 'All stories', missing: 'This story isn’t here.', missingText: 'Explore the collection to find an available story.',
+    metaTitle: 'Story Narrative — A closer look', metaDescription: 'Interactive stories about the objects, materials, and processes that shape our world. Explore in 3D or read at your own pace.',
+  },
+  fr: {
+    skip: 'Aller au contenu', library: 'Les récits', about: 'L’idée', eyebrow: 'Une invitation à regarder de plus près',
+    title: 'Chaque chose', titleEnd: 'a son histoire.',
+    intro: 'Explorez les objets, les matériaux et les procédés qui façonnent notre monde. Démontez-les. Suivez les liens. Découvrez leur fonctionnement.',
+    browse: 'Explorer les récits', collection: 'La collection', collectionTitle: 'Tout commence par la curiosité.',
+    collectionNote: 'Un premier récit. D’autres regards à venir.', enter: 'Entrer dans le récit',
+    aboutEyebrow: 'Une autre façon de comprendre', aboutTitle: 'De l’ensemble au plus petit détail.',
+    aboutText: 'Chaque récit éclaire un sujet à travers des scènes interactives et un parcours guidé. Avancez à votre rythme, prenez le temps d’explorer ou choisissez la lecture.',
+    footer: 'Le fonctionnement des choses, vu de plus près.', loading: 'Ouverture du récit…',
+    failedTitle: 'Le récit n’a pas pu s’ouvrir.', failedText: 'Rechargez la page pour réessayer ou revenez à la collection.',
+    retry: 'Réessayer', home: 'Tous les récits', missing: 'Ce récit est introuvable.', missingText: 'Explorez la collection pour trouver un récit disponible.',
+    metaTitle: 'Story Narrative — Voir de plus près', metaDescription: 'Des récits interactifs sur les objets, les matériaux et les procédés qui façonnent notre monde. Explorez en 3D ou lisez à votre rythme.',
+  },
+}
