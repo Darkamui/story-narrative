@@ -1,0 +1,13 @@
+{
+  "ffmpeg": "C:\\Users\\danny\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "frames": 240,
+  "fps": 30.0,
+  "size": [
+    1920,
+    1080
+  ],
+  "duration_seconds": 8.0,
+  "codec": "H.264",
+  "crf": 18,
+  "passed": true
+}

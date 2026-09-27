@@ -6,17 +6,19 @@ test('library loads without story code, WebGL or model requests', async ({ page 
   page.on('request', request => requests.push(request.url()))
   await page.goto('/')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('There’s a storyinside everything.')
-  await expect(page.locator('.story-card')).toHaveCount(1)
-  await expect(page.locator('.story-cover img')).toBeVisible()
-  expect(await page.locator('.story-cover img').evaluate(image => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+  await expect(page.locator('.story-card')).toHaveCount(2)
+  for (const image of await page.locator('.story-cover img').all()) {
+    await expect(image).toBeVisible()
+    expect(await image.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+  }
   await expect(page.locator('canvas')).toHaveCount(0)
-  expect(requests.filter(url => /\.glb|\/stories\/aluminum\/|three.*\.js|AluminumStory.*\.js/.test(url))).toEqual([])
+  expect(requests.filter(url => /\.glb|\/src\/stories\/|three.*\.js|AluminumStory.*\.js|GraphicsCardStory.*\.js/.test(url))).toEqual([])
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([])
 })
 
 test('enter, return, back, forward and refresh retain the correct route and story position', async ({ page }) => {
   await page.goto('/')
-  await page.getByRole('link', { name: 'Enter the story', exact: true }).click()
+  await page.locator('.story-card').filter({ hasText: 'Inside the Cell' }).getByRole('link', { name: 'Enter the story', exact: true }).click()
   await expect(page).toHaveURL(/\/stories\/aluminum$/)
   await page.getByRole('button', { name: 'Next chapter' }).click()
   await expect(page.locator('.chapter.active')).toHaveAttribute('id', 'reveal')
@@ -51,7 +53,7 @@ test('French persists across the library and story and fits narrow screens', asy
   await expect(page.locator('html')).toHaveAttribute('lang', 'fr')
   await expect(page).toHaveTitle('Story Narrative — Voir de plus près')
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
-  await page.getByRole('link', { name: 'Entrer dans le récit', exact: true }).click()
+  await page.locator('.story-card').filter({ hasText: 'Au cœur de la cuve' }).getByRole('link', { name: 'Entrer dans le récit', exact: true }).click()
   await expect(page.getByRole('button', { name: 'Chapitres' })).toBeVisible()
   await expect(page.getByRole('link', { name: 'Tous les récits', exact: true })).toBeInViewport()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)

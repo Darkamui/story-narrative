@@ -1,0 +1,15 @@
+{
+  "blender": "5.2.1 LTS",
+  "backend": "OPTIX",
+  "device": "GPU",
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "type": "CUDA"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "type": "OPTIX"
+    }
+  ]
+}

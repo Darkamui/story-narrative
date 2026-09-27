@@ -30,6 +30,24 @@ export const stories: readonly StoryDefinition[] = [{
   },
   legacyFragments: ['grain', 'reveal', 'assemblies', 'anatomy', 'section', 'current', 'electrolysis', 'normal', 'anode-effect', 'metal', 'tapping', 'casting'],
   load: () => import('../stories/aluminum/app/AluminumStory'),
+}, {
+  slug: 'graphics-card', number: '02', image: 'images/graphics-card/assembled.webp',
+  copy: {
+    en: {
+      title: 'One Frame', subject: 'Graphics card',
+      description: 'Open a graphics card. Find the chip that calculates the image, explore its supporting parts, and follow the heat through the cooler.',
+      imageAlt: 'The original AXIOM 320 triple-fan graphics card, rendered from its authored 3D model.',
+      format: '9 guided views · Interactive 3D · EN / FR',
+    },
+    fr: {
+      title: 'Une image', subject: 'Carte graphique',
+      description: 'Ouvrez une carte graphique. Trouvez la puce qui calcule l’image, explorez les pièces qui l’entourent et suivez la chaleur dans le refroidisseur.',
+      imageAlt: 'La carte graphique originale AXIOM 320 à trois ventilateurs, rendue depuis son modèle 3D.',
+      format: '9 vues guidées · 3D interactive · EN / FR',
+    },
+  },
+  legacyFragments: [],
+  load: () => import('../stories/graphics-card/GraphicsCardStory'),
 }]
 export const homeHref = import.meta.env.BASE_URL
 export const storyHref = (story: Pick<StoryDefinition, 'slug'>) => `${homeHref}stories/${story.slug}`

@@ -1,0 +1,209 @@
+{
+  "blender": "5.2.1 LTS",
+  "tolerance_m": 1e-07,
+  "objects": 4217,
+  "counts": {
+    "fans": 3,
+    "blades": 27,
+    "memory": 8,
+    "regulator_stages": 10,
+    "heatpipes": 6,
+    "bracket": 1,
+    "main_power_contacts": 12,
+    "sense_contacts": 4
+  },
+  "body_bounds_mm": [
+    [
+      -160.0000113248825,
+      160.0000113248825
+    ],
+    [
+      -66.00000709295273,
+      66.00000709295273
+    ],
+    [
+      -5.001000594347715,
+      57.00099840760231
+    ]
+  ],
+  "body_dimensions_mm": [
+    320.000022649765,
+    132.00001418590546,
+    62.001999001950026
+  ],
+  "pcb_dimensions_mm": [
+    245,
+    112,
+    1.6
+  ],
+  "pcb_flowthrough_clearance_mm": 70.0,
+  "transform_states": {
+    "0": {
+      "pcb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cooler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fans": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shroud": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "backplate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bracket": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screws": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "back_screws": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "0.5": {
+      "pcb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pads": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cooler": [
+        0.0,
+        0.0,
+        0.01265957485884428
+      ],
+      "fans": [
+        0.0,
+        0.0,
+        0.08190476149320602
+      ],
+      "shroud": [
+        0.0,
+        0.0,
+        0.190476194024086
+      ],
+      "backplate": [
+        0.0,
+        0.0,
+        -0.04827586188912392
+      ],
+      "bracket": [
+        -0.04500000178813934,
+        0.0,
+        0.0
+      ],
+      "screws": [
+        0.0,
+        0.0,
+        0.2750000059604645
+      ],
+      "back_screws": [
+        0.0,
+        0.0,
+        -0.125
+      ]
+    },
+    "1": {
+      "pcb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pads": [
+        0.0,
+        0.0,
+        0.029999999329447746
+      ],
+      "cooler": [
+        0.0,
+        0.0,
+        0.08500000089406967
+      ],
+      "fans": [
+        0.0,
+        0.0,
+        0.1720000058412552
+      ],
+      "shroud": [
+        0.0,
+        0.0,
+        0.2499999850988388
+      ],
+      "backplate": [
+        0.0,
+        0.0,
+        -0.10000000149011612
+      ],
+      "bracket": [
+        -0.04500000178813934,
+        0.0,
+        0.0
+      ],
+      "screws": [
+        0.0,
+        0.0,
+        0.2750000059604645
+      ],
+      "back_screws": [
+        0.0,
+        0.0,
+        -0.125
+      ]
+    }
+  },
+  "reversibility_max_world_matrix_error": 0.0,
+  "unexpected_hidden": [],
+  "disabled_modifiers": [],
+  "missing_external_images": [],
+  "contact_alignment": {
+    "GPU_die_top_mm": 3.1,
+    "paste_bottom_top_mm": [
+      3.1,
+      3.4
+    ],
+    "cold_plate_bottom_mm": 3.4,
+    "memory_top_mm": 2.4,
+    "memory_pad_bottom_top_mm": [
+      2.4,
+      3.6
+    ],
+    "memory_land_bottom_mm": 3.6,
+    "VRM_stage_top_mm": 2.3,
+    "VRM_pad_bottom_top_mm": [
+      2.3,
+      3.5
+    ],
+    "VRM_land_bottom_mm": 3.5
+  },
+  "scope": "Dimension, inventory, visibility, file-resource, and transform checks. Intersections require visual review; soldered structural overlaps are intentional.",
+  "passed": true
+}

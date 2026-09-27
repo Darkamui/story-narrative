@@ -1,0 +1,26 @@
+{
+  "source": "C:/Local/2026/3d-graphics-card",
+  "copied": "2026-09-27",
+  "files": [
+    {
+      "file": "modern_gpu_assembled.glb",
+      "bytes": 33079372,
+      "sha256": "78384e626f229c5946e9a201c94a192581585d02246895c09eaa814a4aff6971"
+    },
+    {
+      "file": "modern_gpu_exploded.glb",
+      "bytes": 33079684,
+      "sha256": "bbae5780a6a2dec88c57bdf02425e7e419be6eac8f8e7c47816628e0f53e2faa"
+    },
+    {
+      "file": "modern_gpu_explosion_animated.glb",
+      "bytes": 33105484,
+      "sha256": "cb168a50f3394ba2f5d5fd7354d51156243a7f3a68583a6b4a270c7902d0055d"
+    },
+    {
+      "file": "modern_gpu_exploded.blend",
+      "bytes": 2177953,
+      "sha256": "dbefdad282944457c2312ed95a3b5210e73cc76234ecdfd037fbd2076f040135"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "fan_clearance_intersections": [],
+  "scope": "Fan 0: all blade pairs, frame, and rear struts. Hub/blade root embedding intentionally excluded. Fans 1/2 use identical geometry. Does not certify whole-model collision freedom.",
+  "empty_meshes": [],
+  "nonfinite_vertices": []
+}
